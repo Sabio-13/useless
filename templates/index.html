@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless QR Code Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Branding Header -->
+        <h1>Useless QR Code Generator</h1>
+        <p class="tagline">Create branded QR codes in seconds</p>
+        
+        <!-- Working Form Section -->
+        <form id="qrForm">
+            <div class="form-group">
+                <label for="url">Enter URL:</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="logo">Add Logo (Optional):</label>
+                <input type="file" id="logo" name="logo" accept="image/*">
+                <small>Square logos work best</small>
+            </div>
+            
+            <button type="submit">Generate QR Code</button>
+        </form>
+        
+        <!-- Result Section -->
+        <div id="resultContainer" class="hidden">
+            <h2>Your QR Code:</h2>
+            <div id="qrResult"></div>
+            <button id="downloadBtn">Download QR Code</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
