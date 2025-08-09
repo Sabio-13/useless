@@ -17,5 +17,5 @@ A simple web app that generates QR codes from a URL input with a custom logo pla
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Sabio-13/your-repo-name.git
+   git clone https://github.com/Sabio-13/useless.git
    cd useless
